@@ -15,10 +15,9 @@
     flex-direction: column;
   }
 
-  /* ===== HERO ===== */
   .hero {
     background: #1a1a2e;
-    padding: 48px 24px 40px;
+    padding: 44px 24px 36px;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -37,77 +36,71 @@
     display: inline-block;
     background: rgba(195,125,74,0.2);
     color: #c37d4a;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
-    padding: 6px 16px;
+    padding: 5px 14px;
     border-radius: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
   .hero .price {
-    font-size: 52px;
+    font-size: 48px;
     font-weight: 800;
     line-height: 1;
     margin-bottom: 6px;
   }
   .hero .price sup {
-    font-size: 20px;
-    font-weight: 400;
-    opacity: 0.6;
-    top: -24px;
-  }
-  .hero .price .gst {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     opacity: 0.5;
+    top: -22px;
   }
   .hero h1 {
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 700;
     margin-bottom: 8px;
     line-height: 1.3;
   }
   .hero .tagline {
-    font-size: 15px;
+    font-size: 14px;
     opacity: 0.7;
     line-height: 1.5;
     max-width: 320px;
     margin: 0 auto;
   }
 
-  /* ===== HOW IT WORKS ===== */
   .section {
-    padding: 32px 24px;
+    padding: 28px 24px;
   }
   .section h2 {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 700;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
     color: #c37d4a;
   }
   .steps {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
   }
   .step {
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 12px;
     background: rgba(255,255,255,0.04);
     border: 1px solid rgba(255,255,255,0.08);
     border-radius: 12px;
-    padding: 14px 16px;
+    padding: 12px 14px;
   }
   .step .emoji {
-    font-size: 24px;
-    width: 40px;
+    font-size: 22px;
+    width: 36px;
     text-align: center;
     flex-shrink: 0;
   }
   .step .text {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.4;
     opacity: 0.85;
   }
@@ -116,68 +109,134 @@
     opacity: 1;
   }
 
-  /* ===== FUNDING ===== */
+  /* Incubation section */
+  .incubation {
+    background: linear-gradient(135deg, rgba(195,125,74,0.12), rgba(26,26,46,0));
+    border: 1px solid rgba(195,125,74,0.2);
+    border-radius: 16px;
+    margin: 0 24px;
+    padding: 22px;
+  }
+  .incubation h2 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #c37d4a;
+    margin-bottom: 10px;
+  }
+  .incubation p {
+    font-size: 13px;
+    line-height: 1.6;
+    opacity: 0.8;
+    margin-bottom: 8px;
+  }
+  .incubation .highlight {
+    color: #fff;
+    opacity: 1;
+    font-weight: 600;
+  }
+
+  /* Social proof */
+  .social-links {
+    padding: 24px 24px 8px;
+    text-align: center;
+  }
+  .social-links h2 {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.4);
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .social-links .icons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+  .social-links .icons a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 10px 18px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #f5f0eb;
+    font-size: 13px;
+    font-weight: 500;
+    transition: background 0.2s;
+  }
+  .social-links .icons a:active {
+    background: rgba(255,255,255,0.12);
+  }
+
   .funding {
     background: #0f3460;
     margin: 0 24px;
     border-radius: 16px;
-    padding: 24px;
+    padding: 22px;
   }
   .funding h2 {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 700;
     color: #fff;
     margin-bottom: 8px;
   }
   .funding p {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.5;
     opacity: 0.8;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
   }
-  .funding .btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
+
+  .btn {
+    display: block;
+    text-align: center;
     background: #c37d4a;
     color: #fff;
     font-size: 15px;
     font-weight: 600;
     text-decoration: none;
-    padding: 14px 28px;
+    padding: 14px 20px;
     border-radius: 10px;
     transition: background 0.2s;
+    margin-top: 10px;
   }
-  .funding .btn:active {
-    background: #a6693a;
+  .btn:active { background: #a6693a; }
+  .btn-wa { background: #25D366; }
+  .btn-wa:active { background: #1da851; }
+  .btn-outline {
+    background: transparent;
+    border: 1.5px solid rgba(255,255,255,0.2);
+    font-weight: 500;
   }
+  .btn-outline:active { background: rgba(255,255,255,0.06); }
 
-  /* ===== CONTACT ===== */
   .contact {
-    padding: 32px 24px;
+    padding: 28px 24px;
     text-align: center;
     margin-top: auto;
   }
   .contact .name {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 700;
     margin-bottom: 4px;
   }
   .contact .addr {
-    font-size: 13px;
+    font-size: 12px;
     opacity: 0.5;
     line-height: 1.5;
   }
   .contact .built {
-    font-size: 12px;
+    font-size: 11px;
     opacity: 0.3;
-    margin-top: 16px;
+    margin-top: 14px;
   }
 
-  /* ===== FOOTER ===== */
   .footer {
     text-align: center;
-    padding: 16px 24px 32px;
+    padding: 14px 24px 28px;
     font-size: 11px;
     opacity: 0.25;
   }
@@ -187,47 +246,45 @@
 
 <div class="hero">
   <div class="badge">Northern Beaches · Brookvale</div>
-  <div class="price">
-    $350<sup>+GST</sup>
-  </div>
+  <div class="price">$350<sup>+GST</sup></div>
   <h1>AI Social Media<br>Automation</h1>
-  <p class="tagline">
-    Send photos on messengers.<br>
-    AI runs your Instagram &amp; Facebook.
-  </p>
+  <p class="tagline">Your own AI agent for Instagram &amp; Facebook.<br>1-month incubation — we set it up, you run with it.</p>
 </div>
 
 <div class="section">
   <h2>How It Works</h2>
   <div class="steps">
-    <div class="step">
-      <div class="emoji">📸</div>
-      <div class="text"><strong>1. Send photos</strong> — take a picture and send on Telegram or WhatsApp</div>
-    </div>
-    <div class="step">
-      <div class="emoji">🤖</div>
-      <div class="text"><strong>2. AI writes</strong> — captions, hashtags, and scheduling — all automatic</div>
-    </div>
-    <div class="step">
-      <div class="emoji">📱</div>
-      <div class="text"><strong>3. Auto-posts</strong> — to your Instagram and Facebook, on a consistent schedule</div>
-    </div>
-    <div class="step">
-      <div class="emoji">📊</div>
-      <div class="text"><strong>4. Weekly report</strong> — see what's working, what's not</div>
-    </div>
+    <div class="step"><div class="emoji">📸</div><div class="text"><strong>1. Send photos</strong> — take a picture and send to your AI agent on Telegram or WhatsApp</div></div>
+    <div class="step"><div class="emoji">🤖</div><div class="text"><strong>2. AI writes &amp; posts</strong> — captions, hashtags, scheduling — fully automatic</div></div>
+    <div class="step"><div class="emoji">📱</div><div class="text"><strong>3. Runs on autopilot</strong> — consistent Instagram &amp; Facebook presence, zero effort</div></div>
+    <div class="step"><div class="emoji">📊</div><div class="text"><strong>4. Weekly report</strong> — see what's working, what's not</div></div>
+  </div>
+</div>
+
+<div class="incubation">
+  <h2>🤖 1-Month AI Incubation</h2>
+  <p>We don't just hand you a tool. For <span class="highlight">one month</span>, we incubate your own AI agent in a private chat — you, your AI assistant, and us as your copilot.</p>
+  <p>By the end, <span class="highlight">you own</span> a fully configured AI agent trained on your business. Take it with you, or let us host it.</p>
+  <a class="btn btn-outline" href="https://www.facebook.com/p/Kangarubber-100064006779880/" target="_blank" rel="noopener">See samples on Facebook →</a>
+</div>
+
+<div class="social-links">
+  <h2>See what we do</h2>
+  <div class="icons">
+    <a href="https://www.facebook.com/p/Kangarubber-100064006779880/" target="_blank" rel="noopener">
+      <span>📘</span> Facebook
+    </a>
+    <a href="https://www.instagram.com/kangarubber_syd/" target="_blank" rel="noopener">
+      <span>📷</span> Instagram
+    </a>
   </div>
 </div>
 
 <div class="funding">
   <h2>🏛️ Government Funding Available</h2>
-  <p>Northern Beaches small businesses (1–19 staff) may qualify for a digital grant that could cover the full cost. We'll check your eligibility for free.</p>
-  <a class="btn" href="https://northernbeaches.smartygrants.com.au/B2B2627" target="_blank" rel="noopener">
-    Check Eligibility →
-  </a>
-  <a class="btn" href="https://wa.me/61299398024" target="_blank" rel="noopener" style="margin-top:10px;background:#25D366;display:inline-flex;align-items:center;gap:8px;">
-    💬 Message us on WhatsApp
-  </a>
+  <p>Northern Beaches small businesses (1–19 staff) may qualify for a digital grant that could cover the full cost. We check eligibility for free.</p>
+  <a class="btn" href="https://northernbeaches.smartygrants.com.au/B2B2627" target="_blank" rel="noopener">Check Eligibility →</a>
+  <a class="btn btn-wa" href="https://wa.me/61299398024" target="_blank" rel="noopener">💬 Message us on WhatsApp</a>
 </div>
 
 <div class="contact">
@@ -240,7 +297,7 @@
 </div>
 
 <div class="footer">
-  Kanga Media Auto &middot; $350+GST &middot; Northern Beaches
+  Kanga Media Auto · $350+GST · 1-month incubation · Northern Beaches
 </div>
 
 </body>
